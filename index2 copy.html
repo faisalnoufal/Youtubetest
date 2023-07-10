@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/1f110e9d34.js"></script>
+
+</head>
+<body>
+    <section id="watch" class="youtube-gallery py-5 bg-black position-relative bg-img bg-lines">
+        <div id="ypt_wrapper" class="ypt">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mb-5">
+                <div class="video ratio ratio-16x9">
+                  <div id="player" class="play"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-max">
+            <div class="row">
+              <div class="col-12 px-3">
+                <div id="ypt_thumbs" class="youtube-carousel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+      <script>
+        // Create a new <script> tag and insert it as the first child of the <body> tag
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        </script>
+        
+      
+</body>
+</html>
